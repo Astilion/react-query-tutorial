@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
 
-import Header from '../Header.jsx';
+import Header from '../Header.tsx';
 
 export default function EventDetails() {
   return (

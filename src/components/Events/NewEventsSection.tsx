@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
-import LoadingIndicator from '../UI/LoadingIndicator.jsx';
-import ErrorBlock from '../UI/ErrorBlock.jsx';
-import EventItem from './EventItem.jsx';
+import LoadingIndicator from '../UI/LoadingIndicator.tsx';
+import ErrorBlock from '../UI/ErrorBlock.tsx';
+import EventItem from './EventItem.tsx';
 
 export default function NewEventsSection() {
   const [data, setData] = useState();

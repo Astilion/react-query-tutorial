@@ -5,10 +5,10 @@ import {
 } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
-import Events from "./components/Events/Events.tsx";
-import EventDetails from "./components/Events/EventDetails.tsx";
-import NewEvent from "./components/Events/NewEvent.tsx";
-import EditEvent from "./components/Events/EditEvent.tsx";
+import Events from "./components/Events/Events";
+import EventDetails from "./components/Events/EventDetails";
+import NewEvent from "./components/Events/NewEvent";
+import EditEvent from "./components/Events/EditEvent";
 
 const router = createBrowserRouter([
 	{
@@ -43,7 +43,7 @@ const queryClient = new QueryClient();
 function App() {
 	return (
 		<QueryClientProvider client={queryClient}>
-			<RouterProvider router={router} />;
+			<RouterProvider router={router} />
 		</QueryClientProvider>
 	);
 }

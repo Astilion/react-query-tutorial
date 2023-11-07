@@ -11,7 +11,7 @@ export default function Modal({ children, onClose }) {
 		modal.showModal();
 
 		return () => {
-			modal.close(); // needed to avoid error being thrown
+			// needed to avoid error being thrown
 		};
 	}, []);
 
